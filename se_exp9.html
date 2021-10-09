@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alarm app</title>
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .table{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 2% 2%;
+        border-radius: 5%;
+
+        background-color: rgb(20, 235, 235);
+        align-items: center;
+
+    }
+    .container
+    {
+        background-color:darkorchid;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5% 0;
+    }
+    .heading{
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 580px;
+        margin-right: auto;
+        text-transform: capitalize;
+        color:white;
+    }
+    .heading1{
+        margin-left: 530px;
+        margin-top: 50px;
+        text-transform: capitalize;
+        color:blue;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <h1 class="heading">Alarm for Heavy Sleepers</h1>
+        <h2 class="heading1">Create Alarm</h3>
+        <form action="">
+            <table class="table" height="500" width="500">
+                <tr>
+                    <td>Alarm name</td>
+                    <td>:</td>
+                    <td><input type="text" placeholder="Enter the Alarm Name" size="40" id="alarm name"></td>
+                </tr>
+                <tr>
+                    <td>Alarm time</td>
+                    <td>:</td>
+                    <td><input type="time" placeholder="Enter the Alarm time" size="40" id="alarm time"></td>
+                </tr>
+                <tr>
+                    <td>Week</td>
+                    <td>:</td>
+                    <td><input type="week" placeholder="Enter the week" size="40" id="week"></td>
+                </tr>
+                <tr>
+                    <td>Snooze time</td>
+                    <td>:</td>
+                    <td><input type="text" placeholder="Enter the Snooze time in minutes" size="40" id="snooze time"></td>
+                </tr>
+
+                <tr>
+                    <td>Alarm sound</td>
+                    <td>:</td>
+                    <td>
+                        <select name="alarm sound" id="alarm sound">
+                            <option value="alarm sound">Select the Alarm sound</option>
+                            <option value="1">Homecoming</option>
+                            <option value="2">Atomic Bell</option>
+                            <option value="3">Arcade</option>
+                            <option value="4">80s Phone</option>
+                            <option value="5">Hillside</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Wakeup task</td>
+                    <td>:</td>
+                    <td>
+                        <select name="wakeup task" id="wakeup task">
+                            <option value="wakeup task">Select the Wakeup task</option>
+                            <option value="1">Maths quiz</option>
+                            <option value="2">General Knowledge quiz</option>
+                            <option value="3">Mini game</option>
+                            <option value="4">Shake phone for 50 times</option>
+                            <option value="5">Walk 200 steps</option>
+                        </select>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>Vibration</td>
+                    <td>:</td>
+                    <td >
+                        <input type="Radio" name="Yes" value="Vibration" id="vibration1"><span>Yes</span>
+                        <input type="Radio" name="No" value="Vibration" id="vibration2"><span>No</span>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+    
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>
