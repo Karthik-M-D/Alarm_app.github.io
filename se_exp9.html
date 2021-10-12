@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,119 +9,146 @@
 
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
-    .table{
+
+    .table {
         margin-left: auto;
         margin-right: auto;
         margin-top: 2rem;
         margin-bottom: 2rem;
         padding: 2% 2%;
         border-radius: 5%;
-
         background-color: rgb(20, 235, 235);
         align-items: center;
 
     }
-    .container
-    {
-        background-color:darkorchid;
+
+    .container {
+        background-color: darkorchid;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        padding: 5% 0;
+        padding: 5% 0 0;
+        height: max-content;
     }
-    .heading{
-        align-items: center;
-        margin-top: 50px;
-        margin-left: 580px;
-        margin-right: auto;
+
+    .heading {
+        text-align: center;
+        margin-top: 3rem;
         text-transform: capitalize;
-        color:white;
+        color: white;
     }
-    .heading1{
-        margin-left: 530px;
-        margin-top: 50px;
+
+    .heading1 {
+        /* text-align: left;
+        margin-left: 8rem;
+        margin-top: 2rem;
         text-transform: capitalize;
-        color:blue;
+        color: white; */
+
+        text-align: center;
+        margin-top: 3rem;
+        margin-right: 1rem;
+        text-transform: capitalize;
+        color: white;
+    }
+
+    .footer{
+        background-color: white;
+        height: 50px;
+        width: auto;
+        text-align: center;
+        padding-top: 3%;
+        text-transform: capitalize;
+        font-size: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 </style>
+
 <body>
 
     <div class="container">
         <h1 class="heading">Alarm for Heavy Sleepers</h1>
         <h2 class="heading1">Create Alarm</h3>
-        <form action="">
-            <table class="table" height="500" width="500">
-                <tr>
-                    <td>Alarm name</td>
-                    <td>:</td>
-                    <td><input type="text" placeholder="Enter the Alarm Name" size="40" id="alarm_name"></td>
-                </tr>
-                <tr>
-                    <td>Alarm time</td>
-                    <td>:</td>
-                    <td><input type="time" placeholder="Enter the Alarm time" size="40" id="alarm_time"></td>
-                </tr>
-                <tr>
-                    <td>Day</td>
-                    <td>:</td>
-                    <td><input type="text" placeholder="Enter the day on which the alarm should ring" size="40" id="day"></td>
-                </tr>
-                <tr>
-                    <td>Snooze time</td>
-                    <td>:</td>
-                    <td><input type="text" placeholder="Enter the Snooze time in minutes" size="40" id="snooze_time"></td>
-                </tr>
+            <form action="">
+                <table class="table" height="500" width="500">
+                    <tr>
+                        <td>Alarm name</td>
+                        <td>:</td>
+                        <td><input type="text" placeholder="Enter the Alarm Name" size="40" id="alarm_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Alarm time</td>
+                        <td>:</td>
+                        <td><input type="time" placeholder="Enter the Alarm time" size="40" id="alarm_time"></td>
+                    </tr>
+                    <tr>
+                        <td>Day</td>
+                        <td>:</td>
+                        <td><input type="text" placeholder="Enter the day on which the alarm should ring" size="40"
+                                id="day"></td>
+                    </tr>
+                    <tr>
+                        <td>Snooze time</td>
+                        <td>:</td>
+                        <td><input type="text" placeholder="Enter the Snooze time in minutes" size="40"
+                                id="snooze_time"></td>
+                    </tr>
 
-                <tr>
-                    <td>Alarm sound</td>
-                    <td>:</td>
-                    <td>
-                        <select name="alarm sound" id="alarm_sound">
-                            <option value="alarm sound">Select the Alarm sound</option>
-                            <option value="Homecoming">Homecoming</option>
-                            <option value="Atomic Bell">Atomic Bell</option>
-                            <option value="Arcade">Arcade</option>
-                            <option value="80s Phone">80s Phone</option>
-                            <option value="Hillside">Hillside</option>
-                        </select>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>Alarm sound</td>
+                        <td>:</td>
+                        <td>
+                            <select name="alarm sound" id="alarm_sound">
+                                <option value="alarm sound">Select the Alarm sound</option>
+                                <option value="Homecoming">Homecoming</option>
+                                <option value="Atomic Bell">Atomic Bell</option>
+                                <option value="Arcade">Arcade</option>
+                                <option value="80s Phone">80s Phone</option>
+                                <option value="Hillside">Hillside</option>
+                            </select>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>Wakeup task</td>
-                    <td>:</td>
-                    <td>
-                        <select name="wakeup task" id="wakeup_task">
-                            <option value="wakeup task">Select the Wakeup_task</option>
-                            <option value="Maths quiz">Maths quiz</option>
-                            <option value="General Knowledge quiz">General Knowledge quiz</option>
-                            <option value="Mini game">Mini game</option>
-                            <option value="Shake phone for 50 times">Shake phone for 50 times</option>
-                            <option value="Walk 200 steps">Walk 200 steps</option>
-                        </select>
-                    </td>
-                </tr>
-    
-                <tr>
-                    <td>Vibration</td>
-                    <td>:</td>
-                    <td >
-                        <input type="Radio" name="Yes" value="Vibration" id="vibration1"><span>Yes</span>
-                        <input type="Radio" name="No" value="Vibration" id="vibration2"><span>No</span>
-                    </td>
-                </tr>
-    
-                <tr>
-                    <td><input type="submit" value="Submit" id="submit"></td>
-                </tr>
-    
-            </table>
-        </form>
+                    <tr>
+                        <td>Wakeup task</td>
+                        <td>:</td>
+                        <td>
+                            <select name="wakeup task" id="wakeup_task">
+                                <option value="wakeup task">Select the Wakeup_task</option>
+                                <option value="Maths quiz">Maths quiz</option>
+                                <option value="General Knowledge quiz">General Knowledge quiz</option>
+                                <option value="Mini game">Mini game</option>
+                                <option value="Shake phone for 50 times">Shake phone for 50 times</option>
+                                <option value="Walk 200 steps">Walk 200 steps</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Vibration</td>
+                        <td>:</td>
+                        <td>
+                            <input type="Radio" name="Yes" value="Vibration" id="vibration1"><span>Yes</span>
+                            <input type="Radio" name="No" value="Vibration" id="vibration2"><span>No</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="submit" value="Submit" id="submit"></td>
+                    </tr>
+
+                </table>
+            </form>
+
+            <footer>
+                <h5 class="footer" >© Copyright | Karthik M D | URK20CS2021 | All Rights Reserved.</h5>
+            </footer>
     </div>
-    
+
 </body>
+
 </html>
